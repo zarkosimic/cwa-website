@@ -1,0 +1,116 @@
+.docs {
+    p img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    h1 {
+        margin-top: $spacer * 4;
+        margin-bottom: $spacer * 2.25;
+    }
+    h2 {
+        font-size: $font-size-base * 1.75;
+        margin-top: $spacer * 3.25;
+        margin-bottom: $spacer * 1.8;
+    }
+    h3 {
+        margin-top: $spacer * 2.75;
+        margin-bottom: $spacer * 1.2;
+    }
+    h4 {
+        margin-top: $spacer * 2;
+        margin-bottom: $spacer * 0.75;
+    }
+    h1,h2,h3, h4 {
+        font-weight: $font-weight-bold;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    ul {
+        padding-left: 0.5rem;
+        list-style: none;
+        li {
+            @extend .list-item-bullet;
+            padding-left: 1.25rem;
+        }
+    }
+}
+
+.container_docs {
+    @media(min-width: $screen-md){
+        flew-wrap: nowrap;
+        .side-menu {
+            min-width: 200px;
+        }
+        .main.docs {
+            flex: 1 1 auto;
+            max-width: calc(100% - 200px);
+        }
+    }
+}
+
+body.no-js pre code,
+.code {
+    border-radius: $border-radius;
+    background-color: rgba($blue-ice,10%);
+    border: $border-width solid $grey-300;
+    display: block;
+    position: relative;
+    padding: 1rem;
+    overflow: visible;
+    @media(min-width: $screen-md){
+        padding: 1.25rem;
+    }
+    @media(min-width: $screen-lg){
+        padding: 1.5rem;
+    }
+}
+
+.code code {
+    background-color: transparent;
+    position: static;
+}
+.code .btn_clipboard-copy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media(min-width: $screen-sm){
+        transform: translate3d(50%,-50%, 0);
+    }
+}
+
+code {
+    background-color: rgba($blue-ice,10%);
+    display: inline;
+    padding: 1px 0.25rem;
+    color: inherit;
+    border-radius: $border-radius * 0.5;
+}
+
+.sidebar-toc {
+    flex: 0 1 auto;
+    min-width: 210px;
+    overflow: hidden;
+    display: none;
+    position: sticky;
+    max-height: 100vh;
+    top: $spacer;
+    max-width: 260px;
+    margin-left: $spacer;
+
+    @media (min-width: $screen-xl){
+        display: block;
+        padding-top: $spacer;
+    }
+    @media (min-width: $screen-xl + 40px){
+        width: 260px;
+    }
+    > h1, > h2 {
+        &:first-child {
+            font-size: 0;
+            visibility: hidden;
+        }
+    }
+}

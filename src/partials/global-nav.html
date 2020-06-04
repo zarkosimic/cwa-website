@@ -11,11 +11,11 @@
       {{#if language.nav}}
       <ul class="nav js-main-navigation">
       {{#each language.nav}}
-        {{> navlist-item item=.}}
+        {{> navlist-item item=. }}
       {{/each}}
       <li class="nav-item lang">
-          <a {{#if lang_de}}href="/en/{{#if @root.page-name_en}}{{@root.page-name_en}}/{{else}}{{#if @root.page-name}}{{@root.page-name}}/{{/if}}{{/if}}"{{/if}} class="nav-link{{#unless lang_de}} active{{/unless}}" title="{{language.lang.en.long}}">{{language.lang.en.short}}</a><span
-            class="nav-link-delimiter">|</span><a class="nav-link{{#if lang_de}} active{{/if}}" {{#unless lang_de}}href="/de/{{#if @root.page-name_de}}{{@root.page-name_de}}/{{else}}{{#if @root.page-name}}{{@root.page-name}}/{{/if}}{{/if}}"{{/unless}} title="{{language.lang.de.long}}">{{language.lang.de.short}}</a>
+          <a {{#if lang_de}}href="{{#if @root.page-link_en}}{{@root.page-link_en}}{{else}}/en/{{#if @root.page-name_en}}{{@root.page-name_en}}/{{else}}{{#if @root.page-name}}{{@root.page-name}}/{{/if}}{{/if}}{{/if}}"{{/if}} class="nav-link{{#unless lang_de}} active{{/unless}}" title="{{language.lang.en.long}}">{{language.lang.en.short}}</a><span
+            class="nav-link-delimiter">|</span><a class="nav-link{{#if lang_de}} active{{/if}}" {{#unless lang_de}}href="{{#if @root.page-link_de}}{{@root.page-link_de}}{{else}}/de/{{#if @root.page-name_de}}{{@root.page-name_de}}/{{else}}{{#if @root.page-name}}{{@root.page-name}}/{{/if}}{{/if}}{{/if}}"{{/unless}} title="{{language.lang.de.long}}">{{language.lang.de.short}}</a>  
       </li>
       </ul>
       {{/if}}

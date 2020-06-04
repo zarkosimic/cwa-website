@@ -366,3 +366,36 @@ p:not([class]) + .btn {
         }
     }
 }
+.side-menu {
+    .nav-item {
+        max-width: 100%;
+        position: relative;
+
+        &-toc {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease-in-out;
+        }
+        &-toggle{
+            width: 1rem;
+            height: 1rem;
+            appearance: none;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate3d(-10%,-50%,0);
+            border: none;
+
+            &.active + .nav-item-toc {
+                max-height: 9000px;
+            }
+        }
+        @media (min-width: $screen-xl){
+            .nav-item-toggle,
+            .nav-item-toc {
+                display: none;
+            }
+        }
+    }
+}
+

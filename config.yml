@@ -34,3 +34,19 @@ PATHS:
   # Paths to root assets
   rootAssets:
     - "src/root-assets/*"
+  #source Docs json-list derrived from external resources (list of links)
+  srcDocs:
+    #source Docs folder
+    sources: "src/docs/"
+    #structure defintion (generated based on sources folder)
+    structure:
+      #source Docs file-structure (target is generated prior to build)
+      folder: "src/data/"
+      #source Docs file-structure (target is generated prior to build)
+      file: "docs.json"
+    #source Docs pages (generated based on the data/docs.json)
+    pages: "src/pages"
+    #souce folder for docs images
+    assets: "src/assets/img/docs/"
+  
+  

@@ -1,0 +1,100 @@
+{
+	"index": "scoping-document",
+	"description": {
+		"de": "Corona Warn App - Dokumentation",
+		"en": "Corona Warn App - Documentation"
+	},
+	"structure": {
+		"de": {
+			"architecture-overview": {
+				"title": "Architecutre Overview",
+				"name": "architecture-overview",
+				"source": "https://raw.githubusercontent.com/corona-warn-app/cwa-server/master/docs/architecture-overview.md",
+				"path": "src/docs/architecture-overview.md"
+			},
+			"code-of-conduct": {
+				"title": "Code of Conduct",
+				"name": "code-of-conduct",
+				"source": "https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/CODE_OF_CONDUCT.md",
+				"path": "src/docs/code_of_conduct.md"
+			},
+			"scoping-document": {
+				"name": "scoping-dokument",
+				"title": "Scoping-Dokument",
+				"source": "https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/translations/scoping_document.de.md",
+				"path": "src/docs/scoping_document.de.md"
+			},
+			"solution-architecture": {
+				"title": "Solution Architecture",
+				"description": "what solution architecutre is about, this will differ from defaults",
+				"name": "solution-architecture",
+				"source": "https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/solution_architecture.md",
+				"contents": {
+					"nested-solutions": {
+						"title": "Nested Solutions",
+						"name": "nested-solutions",
+						"source": "https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/solution_architecture.md",
+						"path": "src/docs/solution_architecture.md"
+					}
+				},
+				"path": "src/docs/solution_architecture.md"
+			}
+		},
+		"en": {
+			"architecture-overview": {
+				"title": "Architecutre Overview",
+				"name": "architecture-overview",
+				"source": "https://raw.githubusercontent.com/corona-warn-app/cwa-server/master/docs/architecture-overview.md",
+				"path": "src/docs/architecture-overview.md"
+			},
+			"code-of-conduct": {
+				"title": "Code of Conduct",
+				"name": "code-of-conduct",
+				"source": "https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/CODE_OF_CONDUCT.md",
+				"path": "src/docs/code_of_conduct.md"
+			},
+			"scoping-document": {
+				"title": "Scoping Document",
+				"name": "scoping-document",
+				"source": "https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/scoping_document.md",
+				"path": "src/docs/scoping_document.md"
+			},
+			"solution-architecture": {
+				"title": "Solution Architecture",
+				"description": "what solution architecutre is about, this will differ from defaults",
+				"name": "solution-architecture",
+				"source": "https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/solution_architecture.md",
+				"contents": {
+					"nested-solutions": {
+						"title": "Nested Solutions",
+						"name": "nested-solutions",
+						"source": "https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/solution_architecture.md",
+						"path": "src/docs/solution_architecture.md"
+					}
+				},
+				"path": "src/docs/solution_architecture.md"
+			}
+		}
+	},
+	"languages": {
+		"types": [
+			"de",
+			"en"
+		],
+		"default": "en"
+	},
+	"syncDefaults": true,
+	"pages": {
+		"properties": {
+			"lang_#{language}": "true",
+			"active-nav-item": "docs",
+			"page-title": "#{title}",
+			"page-description": "#{description}",
+			"page-name": "#{name}",
+			"page-name_#{language.types}": "#{language.types:#name}",
+			"page-link_#{language.types}": "/#{language.types:#url}"
+		},
+		"prepend": "{{#markdown}}",
+		"append": "{{/markdown}}"
+	}
+}

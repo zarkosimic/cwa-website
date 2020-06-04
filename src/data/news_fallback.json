@@ -1,0 +1,49 @@
+{
+    "headline": {
+        "title": "News",
+        "text": "In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. "
+    },
+    "links": [
+
+    ],
+    "entries": [{
+        "image": {
+            "url": ".jpg",
+            "title": "",
+            "alt": ""
+        },
+        "title": "Halfway point for the Corona Warn App developers",
+        "date": "25.05.2020",
+        "author": "Adel Al-Saleh",
+        "source": {
+            "title":"Linkedin",
+            "url": "https://LinkedIn.com"
+        }
+    },{
+        "image": {
+            "url": "./jpg",
+            "title": "",
+            "alt": ""
+        },
+        "title": "Corona-Warn-App Entwicklung: “Publish often and early”",
+        "date": "25.05.2020",
+        "author": "SAP News",
+        "source": {
+            "title": "SAP News",
+            "url": "https://sap.com"
+        }
+    },{
+        "title": "Corona-Warn-App Entwicklung: “Publish often and early”",
+        "date": "25.05.2020",
+        "author": "SAP News",
+        "source": {
+            "title": "SAP News",
+            "url": "https://sap.com"
+        }
+    }],
+    "content": {
+        "button": {
+            "title": "Load more"
+        }
+    }
+}

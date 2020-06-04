@@ -1,0 +1,17 @@
+<section class="section-docs">
+    <div class="container container_flex container_docs">
+        <aside class="side-menu js-menu" id="side-menu">
+            <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
+            <ul class="nav flex-column js-scroll-navigate">
+                {{#if lang_de}}
+                {{> nav-item-component structure=structure.de}}
+                {{else}}
+                {{> nav-item-component structure=structure.en}}
+                {{/if}}
+            </ul>
+        </aside>
+        <main class="main docs js-docs">
+        {{> body}}
+        </main>
+    </div>
+</section>

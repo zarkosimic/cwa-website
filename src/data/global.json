@@ -47,6 +47,10 @@
                 }
             },
             "nav": [{
+                  "id": "docs",
+                  "title": "Docs",
+                  "url": "/en/docs/"
+            },{
                 "id": "community",
                 "title": "Community",
                 "url": "/en/community/"
@@ -131,9 +135,14 @@
             },
             "nav": [
                 {
-                    "id": "community",
-                    "title": "Community",
-                    "url": "/de/community/"
+                  "id": "docs",
+                  "title": "Docs",
+                  "url": "/de/docs/"
+                },
+                {
+                  "id": "community",
+                  "title": "Community",
+                  "url": "/de/community/"
                 },
                 {
                     "id": "blog",

@@ -1,0 +1,12 @@
+{{#each structure}}
+{{#ifequal @key @root.docs.index}}
+<li class="nav-item"><a class="nav-link{{#ifequal @root.page-link_en '/en/docs/'}} active{{/ifequal}}{{#ifequal @root.page-link_de '/de/docs/'}} active{{/ifequal}}" {{#if name}}
+        href="/de/docs/" {{/if}}>{{title}}</a></li>
+{{/ifequal}}
+{{/each}}
+{{#each structure}}
+{{#ifCond @key @root.docs.index}}{{else}}
+<li class="nav-item"><a class="nav-link{{#ifequal @key @root.page-name}} active{{/ifequal}}" {{#if name}}
+        href="/de/docs/{{name}}/" {{/if}}>{{title}}</a></li>
+{{/ifCond}}
+{{/each}}
