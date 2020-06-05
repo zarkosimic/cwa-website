@@ -406,14 +406,15 @@ p:not([class]) + .btn {
             right: 0;
             top: 1rem;
             transform: translate3d(-10%, -2px,0);
-            background: transparent url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='%2380CDEC' fill-rule='evenodd' d='M15 8.986h-6.014v6.014h-1.972v-6.014h-6.014v-1.972h6.014v-6.014h1.972v6.014h6.014z'/%3e%3c/svg%3e") center no-repeat;
+            background: transparent url("data:image/svg+xml;charset=UTF-8,%3csvg version='1' xmlns='http://www.w3.org/2000/svg' width='12' height='10' viewBox='0 0 12 10'%3e%3cpath fill='%235CC3EC' d='M11.5 3.336l-5.5 5.664-5.5-5.664 1.298-1.336 4.202 4.35 4.202-4.35 1.298 1.336z'/%3e%3c/svg%3e") center no-repeat;
             background-size: 0.95rem auto;
             border: none;
             z-index: 1;
             background-color: transparent;
 
             &.active {
-                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 16 15'%3e%3cpath fill='%2380CDEC' fill-rule='evenodd' d='M15 8.425h-14v-1.85h14z'/%3e%3c/svg%3e");
+                transform: rotate(180deg);
+                // background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 16 15'%3e%3cpath fill='%2380CDEC' fill-rule='evenodd' d='M15 8.425h-14v-1.85h14z'/%3e%3c/svg%3e");
                 ~ .nav-item-toc {
                     max-height: 9000px;
                 }
