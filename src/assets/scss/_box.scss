@@ -226,7 +226,42 @@ p:not([class]) + .btn {
         width: 50vw;
         max-width: 240px;
         position: fixed;
-
+        &.active {
+            &:after,
+            &:before {
+                position: fixed;
+                content: "";
+                height: 100vh;
+                width: 300vw;
+                background-color: $dark;
+                opacity: 0.2;
+                display: block;
+                top: 0;
+                z-index: -1;
+                left: 0;
+            }
+            &:after {
+                position: fixed;
+                background-color: $body-bg;
+                width: 50vw;
+                max-width: 240px;
+                opacity: 1;
+            }
+        }
+        @media (min-width: $screen-sm){
+            &,
+            &.active:after {
+                max-width: 260px;
+            }
+        }
+        @media (min-width: $screen-md){
+            &.active{
+                &:after,
+                &:before {
+                    display: none;
+                }
+            }
+        }
         @media (max-width: ($screen-md - 1)){
             padding-left: $spacer * 1.25;
             padding-top: 0.5* $spacer;
@@ -250,26 +285,6 @@ p:not([class]) + .btn {
                 background-color: $body-bg;
                 box-shadow: $box-shadow;
                 
-                &:after,
-                &:before {
-                    position: fixed;
-                    content: "";
-                    height: 100vh;
-                    width: 300vw;
-                    background-color: $dark;
-                    opacity: 0.2;
-                    display: block;
-                    top: 0;
-                    z-index: -1;
-                    left: 0;
-                }
-                &:after {
-                    position: fixed;
-                    background-color: $body-bg;
-                    width: 50vw;
-                    max-width: 240px;
-                    opacity: 1;
-                }
                 .menu-close .btn-close {
                     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter x='-64.1%25' y='-46.7%25' width='228.3%25' height='228.3%25' filterUnits='objectBoundingBox' id='a'%3e%3cfeMorphology radius='4' in='SourceAlpha' result='shadowSpreadOuter1'/%3e%3cfeOffset dy='8' in='shadowSpreadOuter1' result='shadowOffsetOuter1'/%3e%3cfeGaussianBlur stdDeviation='12.5' in='shadowOffsetOuter1' result='shadowBlurOuter1'/%3e%3cfeColorMatrix values='0 0 0 0 0.235294118 0 0 0 0 0.270588235 0 0 0 0 0.325490196 0 0 0 0.538625437 0' in='shadowBlurOuter1'/%3e%3c/filter%3e%3crect id='b' width='46' height='46' rx='4'/%3e%3c/defs%3e%3cg fill='none'%3e%3cg transform='matrix(-1 0 0 1 63 9)'%3e%3cuse fill='%23000' filter='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='%23FFF' xlink:href='%23b'/%3e%3c/g%3e%3cpath d='M37.415 40c.473 0 .881-.175 1.222-.525.341-.35.511-.798.511-1.343 0-.545-.17-.993-.511-1.343l-2.727-2.92h12.329c.492 0 .909-.185 1.25-.555.341-.37.511-.808.511-1.314s-.171-.944-.511-1.314c-.341-.37-.757-.555-1.25-.555h-12.329l2.784-2.92c.341-.35.511-.798.511-1.343 0-.545-.17-.993-.511-1.343-.341-.35-.758-.525-1.25-.525s-.909.175-1.25.525l-5.682 6.131c-.341.35-.511.798-.511 1.343 0 .506.171.934.511 1.285l5.682 6.19c.341.35.748.525 1.222.525z' fill='%23000' fill-rule='nonzero'/%3e%3c/g%3e%3c/svg%3e");
                 }
@@ -375,19 +390,47 @@ p:not([class]) + .btn {
             overflow: hidden;
             max-height: 0;
             transition: max-height 0.3s ease-in-out;
+            padding: 0 0 0 $spacer * 2;
+            opacity: 0;
+
+            @media (min-width: $screen-md){
+                opacity: 1;
+                padding-left: $spacer * 1.85;
+            }
         }
-        &-toggle{
+        &-toggle {
             width: 1rem;
             height: 1rem;
             appearance: none;
             position: absolute;
             right: 0;
-            top: 50%;
-            transform: translate3d(-10%,-50%,0);
+            top: 1rem;
+            transform: translate3d(-10%, -2px,0);
+            background: transparent url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='%2380CDEC' fill-rule='evenodd' d='M15 8.986h-6.014v6.014h-1.972v-6.014h-6.014v-1.972h6.014v-6.014h1.972v6.014h6.014z'/%3e%3c/svg%3e") center no-repeat;
+            background-size: 0.95rem auto;
             border: none;
+            z-index: 1;
+            background-color: transparent;
 
-            &.active + .nav-item-toc {
-                max-height: 9000px;
+            &.active {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 16 15'%3e%3cpath fill='%2380CDEC' fill-rule='evenodd' d='M15 8.425h-14v-1.85h14z'/%3e%3c/svg%3e");
+                ~ .nav-item-toc {
+                    max-height: 9000px;
+                }
+            }
+            &:active,
+            &:hover,
+            &:focus {
+                appearance: none;
+                outline: none;
+            }
+        }
+        @media (max-width: ($screen-md - 1px)){
+            &-toggle {
+                right: 0.8rem;
+            }
+            &-toggle + .nav-link {
+                padding-right: 1.8rem;
             }
         }
         @media (min-width: $screen-xl){
@@ -396,6 +439,9 @@ p:not([class]) + .btn {
                 display: none;
             }
         }
+    }
+    &.active .nav-item-toc {
+        opacity: 1;
     }
 }
 
