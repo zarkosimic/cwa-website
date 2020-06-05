@@ -42,7 +42,7 @@
 		},
 		"en": {
 			"architecture-overview": {
-				"title": "Architecutre Overview",
+				"title": "Architecture Overview",
 				"name": "architecture-overview",
 				"source": "https://raw.githubusercontent.com/corona-warn-app/cwa-server/master/docs/architecture-overview.md",
 				"path": "src/docs/architecture-overview.md"
