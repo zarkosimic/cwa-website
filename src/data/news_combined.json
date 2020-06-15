@@ -12,6 +12,62 @@
     ],
     "entries": [{
             "image": {
+                "url": "/assets/img/news/letzte-tests.png"
+            },
+            "title": "Corona-Warn-App Entwicklung: 'Wir befinden uns in der heißen Phase'",
+            "author": "SAP News",
+            "date": "on June 12",
+            "date_de": "12.06.2020",
+            "captionaddition": "[only available in German]",
+            "source": {
+                "title": "SAP News Center",
+                "external": true,
+                "url": "https://news.sap.com/germany/2020/06/corona-warn-app-letzte-tests/"
+            }
+        },{
+            "image": {
+                "url": "/assets/img/news/cwa-oss-image.jpg"
+            },
+            "title": "Warum es sich lohnt die Corona-Warn-App zu installieren",
+            "author": "Claudio Brecht, Luis Trunk de Flores",
+            "date": "on June 10",
+            "date_de": "10.06.2020",
+            "captionaddition": "[only available in German]",
+            "source": {
+                "title": "SAP News Center",
+                "external": true,
+                "url": "https://news.sap.com/germany/2020/06/corona-warn-app-nutzen/"
+            }
+        },{
+            "image": {
+                "url": "/assets/img/news/cwa-update-podcast.png"
+            },
+            "title": "Corona-Warn-App – der digitale Virus-Wachhund (Podcast) - Teil 3",
+            "author": "Deutsche Telekom",
+            "date": "on June 8",
+            "date_de": "08.06.2020",
+            "captionaddition": "[only available in German]",
+            "source": {
+                "title": "YouTube",
+                "external": true,
+                "url": "https://www.youtube.com/watch?v=5v4OhLOJuy8"
+            }
+        },{
+            "image": {
+                "url": "/assets/img/news/cwa-wortbildmarke.jpg"
+            },
+            "title": "Corona-Warn-App: Der Baukasten für Unterstützerinnen und Unterstützer",
+            "author": "Bundesregierung",
+            "date": "on June 8",
+            "date_de": "08.06.2020",
+            "captionaddition": "[only available in German]",
+            "source": {
+                "title": "styleguide.bundesregierung.de",
+                "external": true,
+                "url": "https://styleguide.bundesregierung.de/sg-de/basiselemente/programmmarken/corona-warn-app-baukasten/corona-warn-app-der-baukasten-fuer-unterstuetzerinnen-und-unterstuetzer-1756534"
+            }
+        },{
+            "image": {
                 "url": "/assets/img/news/ui-screens.png"
             },
             "title": "Corona-Warn-App: So wird sie aussehen",
