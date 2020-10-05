@@ -232,6 +232,15 @@
                 "id": "availability",
                 "accordion": [
                     {
+                        "title": "Placeholder",
+                        "anchor": "Placeholder",
+                        "active": true,
+                        "textblock": [
+                            "Placeholder",
+                            "<table class='table'><thead><tr><th>Test</th><th>Test</th><th>Test</th></tr></thead><tbody><tr><td>Test</td><td>Test</td><td>Test</td></tr><tr><td>Test</td><td>Test</td><td>Test</td></tr><tr><td>Test</td><td>Test</td><td>Test</td></tr></tbody></table>"
+                        ]
+                    },
+                    {
                         "title": "What are the minimum operating system requirements for my phone?",
                         "anchor": "minimum_requirements",
                         "active": true,

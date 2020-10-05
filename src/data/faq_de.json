@@ -233,6 +233,15 @@
                 "id": "availability",
                 "accordion": [
                     {
+                        "title": "Placeholder",
+                        "anchor": "Placeholder",
+                        "active": true,
+                        "textblock": [
+                            "Placeholder",
+                            "<table class='table'><thead><tr><th>Test</th><th>Test</th><th>Test</th></tr></thead><tbody><tr><td>Test</td><td>Test</td><td>Test</td></tr><tr><td>Test</td><td>Test</td><td>Test</td></tr><tr><td>Test</td><td>Test</td><td>Test</td></tr></tbody></table>"
+                        ]
+                    },
+                    {
                         "title": "Welche Systemvoraussetzungen muss mein Smartphone erfüllen?",
                         "anchor": "minimum_requirements",
                         "active": true,
