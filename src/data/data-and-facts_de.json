@@ -1,0 +1,22 @@
+{
+    "meta": {
+        "title": "Daten und Fakten",
+        "description": ""
+    },
+    "section-main": {
+        "headline": {
+            "title": "Daten und Fakten"
+        },
+        "content": {
+            "title" : "Corona-Warn-App Daten und Fakten",
+            "textblock": []
+        }
+    },
+    "charts": [
+        {
+            "dataKey": "daily-infections",
+            "title": "Tägliche Neuinfektionen",
+            "showTotalCount": false
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{{#if page-contents}}
+<section class="section">
+    <div class="container">
+        <div class="container-inner container-inner_lg">
+            <div class="row">
+                <div class="col col-12 col-md-8 col-lg-7">
+                {{> headline-component page-contents.section-main.headline}}
+                {{> text-component page-contents.section-main.content}}
+                </div>
+            </div>
+            <div class="row">
+                {{#each page-contents.charts}}
+                <div class="col-12 col-sm-6 col-md-4 box-column">
+                  <div class="box box_flex justify-content-center">
+                      {{#if title}}
+                      <h3 class="headline">{{title}}</h3>
+                      {{/if}}
+                      <div class="chart-container" data-key="{{dataKey}}"></div>
+                  </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>
+{{/if}}
