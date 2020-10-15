@@ -10,15 +10,18 @@
             </div>
             <div class="row">
                 {{#each page-contents.charts}}
-                <div class="col-12 col-sm-6 col-md-4 box-column">
+                <div class="col-12 col-sm-6 col-md-6 box-column">
                   <div class="box box_flex justify-content-center">
-                      {{#if title}}
-                      <h3 class="headline">{{title}}</h3>
-                      {{/if}}
-                      <div class="chart-container" data-key="{{dataKey}}"></div>
-                  </div>
+                        <!-- {{#if title}}
+                        <h3 class="headline">{{title}}</h3>
+                        {{/if}} -->
+                        <div class="chart-container" data-key="{{dataKey}}">
+                            <canvas id="{{dataKey}}"></canvas>
+                        </div>
+                    </div>
                 </div>
                 {{/each}}
+                <div id="chartConfiguration" data-config='{{#stringify page-contents.charts}}{{/stringify}}'></div>
             </div>
         </div>
     </div>

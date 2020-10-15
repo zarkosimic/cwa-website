@@ -16,7 +16,60 @@
         {
             "dataKey": "daily-infections",
             "title": "Daily new infections",
-            "showTotalCount": false
+            "showTotalCount": false,
+            "settings": {
+                "type": "line",
+                "options": {
+                    "legend": {
+                        "display": false,
+                        "labels": {
+                            "fontColor": "rgb(255, 99, 132)"
+                        }
+                    },
+                    "responsive": true,
+                    "title": {
+                        "display": true,
+                        "text": "Daily new infections"
+                    },
+                    "scales": {
+                        "x": {
+                            "type": "linear"
+                        },
+                        "y": {
+                            "type": "linear"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "dataKey": "daily-infections2",
+            "title": "Daily new infections 2",
+            "showTotalCount": true,
+            "settings": {
+                "type": "line",
+                "options": {
+                    "legend": {
+                        "display": false,
+                        "labels": {
+                            "fontColor": "rgb(255, 99, 132)"
+                        }
+                    },
+                    "responsive": true,
+                    "title": {
+                        "display": true,
+                        "text": "Daily new infections 2"
+                    },
+                    "scales": {
+                        "x": {
+                            "type": "linear"
+                        },
+                        "y": {
+                            "type": "linear"
+                        }
+                    }
+                }
+            }
         }
     ]
 }
